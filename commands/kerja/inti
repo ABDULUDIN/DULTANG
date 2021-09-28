@@ -1,0 +1,9 @@
+module.exports = ({
+  name: "$alwaysExecute",
+  code: `
+  $setGlobalUserVar[ambil;$sum[$math[$getGlobalUserVar[ambil]*$getGlobalUserVar[hasil]];$math[$getGlobalUserVar[ambil]*$getGlobalUserVar[penjualan]]]]
+  
+  $onlyif[$getGlobalUserVar[ambil]<=$getGlobalUserVar[coinmax];]
+  $onlyif[$getGlobalUserVar[start]>=1;]
+  `
+})
