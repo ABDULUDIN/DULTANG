@@ -1,0 +1,9 @@
+module.exports = ({
+  name: "",
+  aliases: ['', ''],
+  code: `
+  
+  
+  $onlyif[$getGlobalUserVar[start]>=1;ketik \`$getServerVar[prefix]start\` untuk memulai permainan]
+  `
+})

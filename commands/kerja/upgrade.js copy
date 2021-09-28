@@ -1,0 +1,11 @@
+  $elseIf[$tolowercase[$message]==speaker]
+  $title[UPGRADE]
+  $color[BLUE]
+  $description[$username, Speaker telah di upgrade $getGlobalUserVar[speaker]➡$sub[$getGlobalUserVar[speaker];1]]
+  $setGlobalUserVar[coin;$sub[$getGlobalUserVar[coin];$getGlobalUserVar[speaker1]]]
+  $setGlobalUserVar[speaker1;$math[$getGlobalUserVar[speaker1]*2]]
+  $setGlobalUserVar[speaker;$sum[$getGlobalUserVar[speaker];1]]
+  $setGlobalUserVar[hasil;$sub[$getGlobalUserVar[hasil];1]]
+  $onlyif[$getGlobalUserVar[coin]<=$getGlobalUserVar[speaker1];Coin kamu tidak cukup untuk upgrade]
+  $onlyif[$getGlobalUserVar[speaker]<=10;Speaker kamu telah mencapai batas]
+  $endelseIf

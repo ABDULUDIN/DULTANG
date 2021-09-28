@@ -1,0 +1,4 @@
+Nama : ****
+Harga : **$getGlobalUserVar[1]**
+Penjualan : **2×**
+Penggunaan : \`$getServerVar[prefix]upgrade\`
